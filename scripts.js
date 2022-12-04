@@ -53,7 +53,8 @@ educationData.forEach(i => {
  
 const myskills = [ { name : "HTML 5", proficiency : 75},
 { name : "CSS 3", proficiency : 100},
-{ name : "React", proficiency : 50} 
+{ name : "React", proficiency : 50},
+{ name : "C#", proficiency : 75}
 ];
 
 myskills.forEach(i=> {
