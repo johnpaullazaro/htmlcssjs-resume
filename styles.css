@@ -1,0 +1,103 @@
+body {
+    background-color: whitesmoke;
+    margin-bottom: 100px;
+    margin-top:20px;
+}
+
+.main-container{
+    margin-left:  25%;
+    margin-right: 25%;
+}
+.cover-photo {
+    height:220px;
+    width:100%;
+    background-size:cover;
+    background-image:url('images/toronto.jpg');
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px; 
+}
+
+.avatar {
+    height: 170px;
+    width: auto;   
+    float:left;
+    border-radius: 50%; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -40px;
+}
+
+.tags {
+    background-color: rgb(53, 50, 50);
+    padding:12px;
+    margin-right:4px;
+    font-size: 12px;
+    border-radius: 25px;
+    color:white;
+
+}
+
+.header {
+   background-color:rgb(255, 255, 255);
+   border-radius: 35px; 
+}
+
+.card {
+    background-color:rgb(255, 255, 255);
+    height: auto;
+    margin-top:20px;
+    padding:20px;
+    border-radius: 35px;
+}
+
+h1 { margin-top: -2px;}
+
+.proficiency {  
+    height:10px; 
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.legend-title {
+
+}
+.legend-color { width:20px;height:20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.legend-color-pink {
+   background-color:rgb(250, 27, 194); 
+}
+.proficiency-30 {
+    width:30%;
+    background-color: rgb(250, 27, 194);
+}
+
+.legend-color-blue {
+   background-color: rgb(57, 215, 255); 
+ }
+.proficiency-50 {
+    width:50%;
+    background-color: rgb(57, 215, 255);
+}
+.legend-color-amber {
+    background-color:rgb(251, 167, 0); 
+  }
+.proficiency-75 {
+    width:75%;
+    background-color: rgb(251, 167, 0);
+}
+.legend-color-orange {
+    background-color:rgb(251, 84, 0);
+  }
+.proficiency-85 {
+    width:85%;
+    background-color: rgb(251, 84, 0);
+} 
+.legend-color-green {
+    background-color:green
+  }
+.proficiency-100 {
+    width:100%;
+    background-color: green;
+}

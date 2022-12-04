@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+  <div class="main-container">
+    <div class="header"> 
+        <div class="cover-photo"></div> 
+        <img class="avatar" src="images/profile.jpg" />
+        <h1 id="fullname"></h1>
+        <h4 id="location" style="margin-top:-14px;"></h4>
+        <div id="positions"></div>
+         
+        <br> <br><br>
+    </div>
+    <!--close header-->
+   
+    <!--start educational attainment-->
+    <div class="card">
+        <h2>Education</h2> 
+        <table style="width:100%;text-align: left;">
+            <thead>
+                <th></th>  
+                <th></th>
+                <th>Course</th>
+                <th>School</th> 
+                <th>Year Graduated</th> 
+            </thead>
+            <tbody id="educationRows"></tbody>
+        </table>
+    </div> 
+    <!--close educational attainment-->
+
+  
+     <!--start work exp--> 
+        <div class="card">
+            <h2>Work Experiences</h2> 
+            <table style="width:100%;text-align: left;">
+                <thead>  
+                    <th></th>
+                    <th>Company</th>
+                    <th>Position</th> 
+                    <th>Work Duration</th> 
+                </thead>
+                <tbody>
+                  <tr> 
+                    <td>
+                        <img style="width:220px;"
+                        src="images/microsoft.jpg" class="school-banner" />
+    
+                    </td>   
+                    <td>Microsoft</td>  
+                    <td>Software Engineer</td>  
+                    <td>July 2019-January-2021</td>  
+                   </tr>  
+    
+                   <tr> 
+                    <td>
+                        <img style="width:220px;"
+                        src="images/google.jpg"  />
+    
+                    </td>   
+                    <td>Microsoft</td>  
+                    <td>Software Engineer</td>  
+                    <td>July 2019-January-2021</td>  
+                   </tr>  
+                </tbody>
+            </table>
+        </div> 
+     
+    <!--close work exp-->
+
+  <!--start skills-->
+  <div class="card">
+    <h2>Skills</h2> 
+    <br> 
+    <ul id="myskills"></ul>
+
+
+    <h4>Legends</h4>
+    <div style="display:flex;margin-left: 20px;">
+       
+        <span class="legend-title">Beginner</span>
+        <div class="legend-color legend-color-pink"></div>
+       
+        <span class="legend-title">Intermediate</span>
+        <div class="legend-color legend-color-amber "></div>
+    
+        <span class="legend-title">Professional</span>
+        <div class="legend-color legend-color-green"></div>
+    
+    </div>
+   
+</div> 
+<!--close skills-->
+  
+
+
+  </div>  
+  
+    <script src="scripts.js"></script>
+</body>
+</html>
