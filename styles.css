@@ -58,46 +58,35 @@ h1 { margin-top: -2px;}
     border-radius: 20px;
 }
 
-.legend-title {
-
-}
 .legend-color { width:20px;height:20px;
     margin-left: 12px;
     margin-right: 12px;
-}
-.legend-color-pink {
-   background-color:rgb(250, 27, 194); 
-}
-.proficiency-30 {
-    width:30%;
-    background-color: rgb(250, 27, 194);
+} 
+.newbie { background-color: rgb(246, 106, 132); }
+.proficiency-newbie {
+    width:10%; 
+} 
+ 
+.beginner { background-color: rgb(250, 172, 27); } 
+.proficiency-beginner {
+    width:30%; 
 }
 
-.legend-color-blue {
-   background-color: rgb(57, 215, 255); 
- }
-.proficiency-50 {
-    width:50%;
-    background-color: rgb(57, 215, 255);
-}
-.legend-color-amber {
-    background-color:rgb(251, 167, 0); 
-  }
-.proficiency-75 {
-    width:75%;
-    background-color: rgb(251, 167, 0);
-}
-.legend-color-orange {
-    background-color:rgb(251, 84, 0);
-  }
-.proficiency-85 {
-    width:85%;
-    background-color: rgb(251, 84, 0);
+
+
+.skilled { background-color: rgb(255, 94, 0); } 
+.proficiency-skilled {
+    width:60%;
+    background-color: rgb(255, 94, 0);
 } 
-.legend-color-green {
-    background-color:green
-  }
-.proficiency-100 {
-    width:100%;
+
+.expert { background-color: green; }  
+.proficiency-expert {
+    width:85%;
     background-color: green;
+}
+
+.advance {background-color: rgb(0, 179, 255); }   
+.proficiency-advance {
+    width:100%; 
 }

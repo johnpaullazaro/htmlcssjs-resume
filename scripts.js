@@ -51,16 +51,19 @@ educationData.forEach(i => {
 
 });
  
-const myskills = [ { name : "HTML 5", proficiency : 75},
-{ name : "CSS 3", proficiency : 100},
-{ name : "React", proficiency : 50},
-{ name : "C#", proficiency : 75}
+const myskills = [ { name : "HTML 5", proficiency : "expert"},
+{ name : "CSS 3", proficiency : "newbie"},
+{ name : "React", proficiency : "skilled"},
+{ name : "C#", proficiency : "beginner"},
+{ name : "Java", proficiency : "newbie"},
+{ name : "Angular", proficiency :  "skilled"}
 ];
 
 myskills.forEach(i=> {
     const li = ` <li>
     ${i.name} 
-    <div class="proficiency proficiency-${i.proficiency}"></div>
+    <div title="${i.proficiency}"
+     class="proficiency ${i.proficiency} proficiency-${i.proficiency}"></div>
     </li>`;
     
     document.getElementById("myskills").innerHTML += li;
@@ -68,3 +71,12 @@ myskills.forEach(i=> {
 
  
 
+const Legends = ["newbie","beginner","skilled","expert","advance"]
+Legends.forEach(i => {
+
+    const htm = ` <span class="legend-title">
+    ${i}</span>
+    <div class="legend-color  ${i}"></div>`;
+
+    document.getElementById("legends-item").innerHTML += htm;
+});
