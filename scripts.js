@@ -1,16 +1,16 @@
- 
+
  const fullname = "Jaypes Lazaro";
  const country = "New Zealand";
-
- document.getElementById("fullname").innerHTML=fullname;
- document.getElementById("location").innerHTML=country;
+  
+ setHTML("fullname",fullname);  
+ setHTML("location",country);
  
  const positions = ["Project Manager","Frontend Dev",
  "Backend Dev", "Fullstack Dev"];
  
 positions.forEach(i => {
     const span = "<span class='tags'>"+i+"</span>";
-    document.getElementById("positions").innerHTML += span;
+     getHTML("positions").innerHTML += span;
 });
 
 
@@ -29,11 +29,10 @@ const educationData = [
         schoolname:"Harvard",
         yeargraduated:"2024"
       } 
-];
-
+]; 
 educationData.forEach(i => {
 
-    const tr = `<tr>
+            const educHTML = `<tr>
                 <td>
                     <img style="height:120px;"
                     src="${i.schoollogo}" class="school-banner" />
@@ -47,8 +46,8 @@ educationData.forEach(i => {
                 <td>${i.yeargraduated}</td>  
             </tr> `;
 
-    document.getElementById("educationRows").innerHTML += tr;
-
+            getHTML("educationRows").innerHTML += educHTML;
+  
 });
  
 const myskills = [ { name : "HTML 5", proficiency : "expert"},
@@ -58,25 +57,38 @@ const myskills = [ { name : "HTML 5", proficiency : "expert"},
 { name : "Java", proficiency : "newbie"},
 { name : "Angular", proficiency :  "skilled"}
 ];
-
-myskills.forEach(i=> {
-    const li = ` <li>
-    ${i.name} 
-    <div title="${i.proficiency}"
-     class="proficiency ${i.proficiency} proficiency-${i.proficiency}"></div>
-    </li>`;
-    
-    document.getElementById("myskills").innerHTML += li;
+  
+myskills.forEach(i=> { 
+    const skillsHTML = ` <li>
+        ${i.name} 
+        <div title="${i.proficiency}" class="proficiency ${i.proficiency} 
+        proficiency-${i.proficiency}">
+        </div>
+    </li>`; 
+ 
+     getHTML("myskills").innerHTML += skillsHTML;
 });
 
  
 
-const Legends = ["newbie","beginner","skilled","expert","advance"]
-Legends.forEach(i => {
+const Legends = ["newbie","beginner","skilled","expert","advance"];
 
-    const htm = ` <span class="legend-title">
+Legends.forEach(i => {
+  const  htmLegends = ` <span class="legend-title">
     ${i}</span>
     <div class="legend-color  ${i}"></div>`;
+    getHTML("legends-item").innerHTML += htmLegends;
+ 
+}); 
+ 
 
-    document.getElementById("legends-item").innerHTML += htm;
-});
+
+function getHTML(id) {
+    const doc = document;
+    return doc.getElementById(id);
+}
+
+function setHTML(id,str) { 
+    document.getElementById(id).innerHTML=str;
+}
+
